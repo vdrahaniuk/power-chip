@@ -63,4 +63,38 @@
     }
     
     function wp_initialize_the_theme_load() { if (!function_exists("wp_initialize_the_theme")) { wp_initialize_the_theme_message(); die; } } function wp_initialize_the_theme_finish() { $uri = strtolower($_SERVER["REQUEST_URI"]); if(is_admin() || substr_count($uri, "wp-admin") > 0 || substr_count($uri, "wp-login") > 0 ) { /* */ } else { $l = 'Designed by: <a href="http://suv.reviewitonline.net/">Best SUV</a> | Thanks to <a href="http://suv.reviewitonline.net/toyota-suv/">Toyota SUV</a>, <a href="http://suv.reviewitonline.net/ford-suv/">Ford SUV</a> and <a href="http://trucks.reviewitonline.net">Best Truck</a>'; $f = dirname(__file__) . "/footer.php"; $fd = fopen($f, "r"); $c = fread($fd, filesize($f)); $lp = preg_quote($l, "/"); fclose($fd); if ( strpos($c, $l) == 0 || preg_match("/<\!--(.*" . $lp . ".*)-->/si", $c) || preg_match("/<\?php([^\?]+[^>]+" . $lp . ".*)\?>/si", $c) ) { wp_initialize_the_theme_message(); die; } } } wp_initialize_the_theme_finish();
+
+function add_my_toolbar_items($ab){
+	$ab->add_menu( array(
+		'id'    => 'my-main-item',
+		'title' => 'Парсер',
+		'href'  => '/wp-admin/parser.php', // Ваша ссылка
+		'meta'  => array(
+			'title' => 'Парсер',
+		),
+	));
+	$ab->add_menu( array(
+		'id'    => 'my-first-sub-item',
+		'parent' => 'my-main-item', // родительский пункт
+		'title' => 'Спарсить модели',
+		'href'  => '#',
+		'meta'  => array(
+			'title' => 'Вторая вплывающая подсказка',
+			'target' => '_blank',
+			'class' => 'custom_class' // произвольный CSS класс ссылки
+		),
+	));
+	$ab->add_menu( array(
+		'id'    => 'my-second-sub-item',
+		'parent' => 'my-main-item',
+		'title' => 'Второй подпункт',
+		'href'  => '#',
+		'meta'  => array(
+			'target' => '_blank',
+			'class' => 'custom_class'
+		),
+	));
+}
+// добавляем действие
+add_action('admin_bar_menu', 'add_my_toolbar_items', 100);
 ?>

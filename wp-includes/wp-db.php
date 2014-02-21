@@ -1185,7 +1185,8 @@ class wpdb {
 
 		$return_val = 0;
 		$this->flush();
-
+echo $query;
+		echo '<br>';
 		// Log how the function was called
 		$this->func_call = "\$db->query(\"$query\")";
 
@@ -1364,7 +1365,7 @@ class wpdb {
 			$wheres[] = "`$field` = {$form}";
 		}
 
-		$sql = "UPDATE `$table` SET " . implode( ', ', $bits ) . ' WHERE ' . implode( ' AND ', $wheres );
+		$sql = "UPDATE `$table` SET " . implode( ', ', $bits ) . ' WHERE ' . implode( ' AND ', $wheres ).' ';
 		return $this->query( $this->prepare( $sql, array_merge( array_values( $data ), array_values( $where ) ) ) );
 	}
 
