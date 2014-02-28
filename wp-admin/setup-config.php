@@ -28,7 +28,7 @@ define('WP_SETUP_CONFIG', true);
  *
  * Set this to error_reporting( E_ALL ) or error_reporting( E_ALL | E_STRICT ) for debugging
  */
-error_reporting(0);
+error_reporting(E_ALL);
 
 /**#@+
  * These three defines are required to allow us to use require_wp_db() to load
@@ -38,7 +38,8 @@ error_reporting(0);
 define('ABSPATH', dirname(dirname(__FILE__)).'/');
 define('WPINC', 'wp-includes');
 define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+
 /**#@-*/
 
 require(ABSPATH . WPINC . '/load.php');

@@ -1615,3 +1615,8 @@ h3#reply-title {
 #respond dd {
     display: inline;
 }
+.car_select{
+	width: 291px;
+	font-size: 18px;
+	height: 30px;
+}

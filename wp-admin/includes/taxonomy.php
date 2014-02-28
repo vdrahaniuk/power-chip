@@ -1,4 +1,5 @@
 <?php
+
 /**
  * WordPress Taxonomy Administration API.
  *
@@ -89,7 +90,9 @@ function wp_create_categories($categories, $post_id = '') {
  * @return int|object The ID number of the new or updated Category on success. Zero or a WP_Error on failure, depending on param $wp_error.
  */
 function wp_insert_category($catarr, $wp_error = false) {
+
 	$cat_defaults = array('cat_ID' => 0, 'taxonomy' => 'category', 'cat_name' => '', 'category_description' => '', 'category_nicename' => '', 'category_parent' => '');
+
 	$catarr = wp_parse_args($catarr, $cat_defaults);
 	extract($catarr, EXTR_SKIP);
 

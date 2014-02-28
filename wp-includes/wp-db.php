@@ -1185,8 +1185,7 @@ class wpdb {
 
 		$return_val = 0;
 		$this->flush();
-echo $query;
-		echo '<br>';
+//echo $query;
 		// Log how the function was called
 		$this->func_call = "\$db->query(\"$query\")";
 

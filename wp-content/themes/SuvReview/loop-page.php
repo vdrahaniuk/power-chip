@@ -48,3 +48,4 @@
     ?>
     
 <?php endwhile; ?>
+<?php get_sidebars('footer'); ?>
