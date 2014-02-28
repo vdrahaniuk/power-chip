@@ -26,13 +26,15 @@ LEFT JOIN tn_cat_car_model AS cm ON cm.car_customer = cc.id AND cm.car_type = ct
 LEFT JOIN tn_cat_car_engine AS ce ON ce.car_model = cm.id
 WHERE
 ce.parsed=0
-limit 10");
+limit 15");
 $i = 0;
+
 
 foreach ($cats as $cat) {
 	$page = "<div>";
 	$type = str_replace(' ', '-', strtolower($cat->type));
 	echo $url = "http://www.tuningbox.su/tbv/{$type}/{$cat->customer}/{$cat->model}/{$cat->engine}.htm";
+
 	$strPage = file_get_contents($url);
 
 	$html = str_get_html($strPage);
@@ -52,13 +54,16 @@ foreach ($cats as $cat) {
 	}
 	if ($linkImage)
 		$page .= "<img src='{$linkImage}'>";
+		$page .= "</div>";
 	$post_name = str_replace('.', '-', strtolower("{$cat->customer}_{$cat->model}_{$cat->engine}"));
+	
 	echo "<br>";
 	$post_id = $wpdb->get_results("select id from $wpdb->posts where post_name='{$post_name}'");
-	$id = @$post_id[0]->id;
-	$page .= "</div>";
+	$post_id = @$post_id[0]->id;
+	
+
 	$my_post = array(
-		'ID' => $id,
+		'ID' => $post_id,
 		'post_title' => "{$cat->customer} {$cat->model} {$cat->engine}",
 		'post_content' => $page,
 		'post_status' => 'publish',
@@ -68,14 +73,16 @@ foreach ($cats as $cat) {
 	);
 
 // Вставляем запись в базу данных
+
 	$post_id = wp_insert_post($my_post);
 	$_post_footer_id = 4489;
 	if (get_post_meta($post_id, '_post_footer_id') == "")
 		add_post_meta($post_id, '_post_footer_id', $_post_footer_id, true);
 	elseif ($_post_footer_id != get_post_meta($post_id, '_post_footer_id', true))
 		update_post_meta($post_id, '_post_footer_id', $_post_footer_id);
-
-	$wpdb->update('tn_cat_car_engine', array('parsed' => 1), array('id' => $cat->engine));
+	if($post_id){
+	$wpdb->update('tn_cat_car_engine', array('parsed' => 1), array('id' => $cat->engine,'car_model'=>$cat->model));
+	}
 	$i++;
 }
 echo $i;

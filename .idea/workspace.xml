@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6511771f-30e2-4a86-a69b-1439ac750153" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/fancy-box/fancybox.php" afterPath="$PROJECT_DIR$/wp-content/plugins/fancy-box/fancybox.php" />
+    </list>
+    <ignored path="www.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="www" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="8" selection-start="372" selection-end="372" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="408">
+              <folding>
+                <element signature="e#7#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fancybox.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/fancy-box/fancybox.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="4" selection-start="1048" selection-end="1302" vertical-scroll-proportion="-6.2115383" vertical-offset="153" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2922" column="1" selection-start="91129" selection-end="91129" vertical-scroll-proportion="-7.5384617" vertical-offset="49410" max-vertical-offset="65688">
+              <folding>
+                <marker date="1393048126106" expanded="true" signature="13938:14044" placeholder="SELECT meta_..$wpdb-&gt;postmeta WHERE..." />
+                <marker date="1393048126106" expanded="true" signature="14677:14783" placeholder="SELECT post_..$wpdb-&gt;postmeta WHERE..." />
+                <marker date="1393048126106" expanded="true" signature="32015:32084" placeholder="SELECT optio..$wpdb-&gt;options WHERE..." />
+                <marker date="1393048126106" expanded="true" signature="106948:107044" placeholder="SELECT post_..$wpdb-&gt;postmeta WHERE..." />
+                <marker date="1393048126106" expanded="true" signature="107507:107609" placeholder="SELECT comme..$wpdb-&gt;commentmeta WHERE..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="find_replace.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/find-replace/find_replace.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="1" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-36.615383" vertical-offset="0" max-vertical-offset="1139">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mijnpress_plugin_framework.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/find-replace/mijnpress_plugin_framework.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="31" selection-start="3234" selection-end="3234" vertical-scroll-proportion="-11.461538" vertical-offset="739" max-vertical-offset="3859">
+              <folding>
+                <marker date="1393048511509" expanded="false" signature="3775:3798" placeholder="..." />
+                <marker date="1393048511509" expanded="false" signature="4245:4289" placeholder="..." />
+                <marker date="1393048511509" expanded="false" signature="4382:4394" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="capabilities.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-includes/capabilities.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="472" column="13" selection-start="10218" selection-end="10218" vertical-scroll-proportion="0.59383035" vertical-offset="7708" max-vertical-offset="24973">
+              <folding>
+                <marker date="1392745875721" expanded="true" signature="12641:12688" placeholder="SELECT * FRO..$wpdb-&gt;users WHERE..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parser-category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-admin/parser-category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.4615383" vertical-offset="116" max-vertical-offset="1411">
+              <folding>
+                <marker date="1393048126096" expanded="true" signature="469:498" placeholder="select * fro..tn_cat_car_type..." />
+                <marker date="1393048126096" expanded="true" signature="965:1027" placeholder="select id fr..tn_cat_car_customer..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding>
+                <marker date="1392745176790" expanded="true" signature="0:199" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/akismet/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="8" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-7.8846154" vertical-offset="543" max-vertical-offset="14263">
+              <folding>
+                <marker date="1392745358279" expanded="false" signature="5283:5293" placeholder="..." />
+                <marker date="1392745358279" expanded="true" signature="15925:15997" placeholder="SELECT COUNT..$wpdb-&gt;commentmeta WHERE..." />
+                <marker date="1392745358279" expanded="false" signature="19446:19459" placeholder="..." />
+                <marker date="1392745358279" expanded="true" signature="23452:23514" placeholder="SELECT * FRO..$wpdb-&gt;comments WHERE..." />
+                <marker date="1392745358279" expanded="true" signature="25437:25499" placeholder="SELECT * FRO..$wpdb-&gt;comments WHERE..." />
+                <marker date="1392745358279" expanded="true" signature="29706:29783" placeholder="SELECT COUNT..$wpdb-&gt;comments WHERE..." />
+                <marker date="1392745358279" expanded="true" signature="30069:30171" placeholder="SELECT COUNT..$wpdb-&gt;comments WHERE..." />
+                <marker date="1392745358279" expanded="true" signature="30483:30541" placeholder="SELECT * FRO..$wpdb-&gt;comments WHERE..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/fancy-box/fancybox.php" />
+        <option value="$PROJECT_DIR$/wp-includes/capabilities.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/find-replace/mijnpress_plugin_framework.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6511771f-30e2-4a86-a69b-1439ac750153" name="Default" comment="" />
+      <created>1393047526076</created>
+      <updated>1393047526076</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="372" selection-end="372" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="408">
+          <folding>
+            <element signature="e#7#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/fancy-box/fancybox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="4" selection-start="1048" selection-end="1302" vertical-scroll-proportion="-6.2115383" vertical-offset="153" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2922" column="1" selection-start="91129" selection-end="91129" vertical-scroll-proportion="-7.5384617" vertical-offset="49410" max-vertical-offset="65688">
+          <folding>
+            <marker date="1393048126106" expanded="true" signature="13938:14044" placeholder="SELECT meta_..$wpdb-&gt;postmeta WHERE..." />
+            <marker date="1393048126106" expanded="true" signature="14677:14783" placeholder="SELECT post_..$wpdb-&gt;postmeta WHERE..." />
+            <marker date="1393048126106" expanded="true" signature="32015:32084" placeholder="SELECT optio..$wpdb-&gt;options WHERE..." />
+            <marker date="1393048126106" expanded="true" signature="106948:107044" placeholder="SELECT post_..$wpdb-&gt;postmeta WHERE..." />
+            <marker date="1393048126106" expanded="true" signature="107507:107609" placeholder="SELECT comme..$wpdb-&gt;commentmeta WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/akismet/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="8" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-7.8846154" vertical-offset="543" max-vertical-offset="14263">
+          <folding>
+            <marker date="1392745358279" expanded="false" signature="5283:5293" placeholder="..." />
+            <marker date="1392745358279" expanded="true" signature="15925:15997" placeholder="SELECT COUNT..$wpdb-&gt;commentmeta WHERE..." />
+            <marker date="1392745358279" expanded="false" signature="19446:19459" placeholder="..." />
+            <marker date="1392745358279" expanded="true" signature="23452:23514" placeholder="SELECT * FRO..$wpdb-&gt;comments WHERE..." />
+            <marker date="1392745358279" expanded="true" signature="25437:25499" placeholder="SELECT * FRO..$wpdb-&gt;comments WHERE..." />
+            <marker date="1392745358279" expanded="true" signature="29706:29783" placeholder="SELECT COUNT..$wpdb-&gt;comments WHERE..." />
+            <marker date="1392745358279" expanded="true" signature="30069:30171" placeholder="SELECT COUNT..$wpdb-&gt;comments WHERE..." />
+            <marker date="1392745358279" expanded="true" signature="30483:30541" placeholder="SELECT * FRO..$wpdb-&gt;comments WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/parser-category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.4615383" vertical-offset="116" max-vertical-offset="1411">
+          <folding>
+            <marker date="1393048126096" expanded="true" signature="469:498" placeholder="select * fro..tn_cat_car_type..." />
+            <marker date="1393048126096" expanded="true" signature="965:1027" placeholder="select id fr..tn_cat_car_customer..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="454">
+          <folding>
+            <marker date="1392745176790" expanded="true" signature="0:199" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/find-replace/find_replace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="1" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-36.615383" vertical-offset="0" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/find-replace/mijnpress_plugin_framework.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="31" selection-start="3234" selection-end="3234" vertical-scroll-proportion="-11.461538" vertical-offset="739" max-vertical-offset="3859">
+          <folding>
+            <marker date="1393048511509" expanded="false" signature="3775:3798" placeholder="..." />
+            <marker date="1393048511509" expanded="false" signature="4245:4289" placeholder="..." />
+            <marker date="1393048511509" expanded="false" signature="4382:4394" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/capabilities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="472" column="13" selection-start="10218" selection-end="10218" vertical-scroll-proportion="0.59383035" vertical-offset="7708" max-vertical-offset="24973">
+          <folding>
+            <marker date="1392745875721" expanded="true" signature="12641:12688" placeholder="SELECT * FRO..$wpdb-&gt;users WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
