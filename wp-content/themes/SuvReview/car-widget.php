@@ -51,7 +51,7 @@ class MY_Widget extends WP_Widget
 				jQuery('#type_select select').live('change', function () {
 					var id = jQuery(this).val()
 					jQuery.ajax({
-						url: '/ajax.php?action=show_cat&id=' + id,
+						url: '/ajax.php?action=show_cat&p=2&id=' + id,
 						success: function (d) {
 							jQuery('#customer_select').html(d);
 							jQuery('#model_select, #engine_select').html('');
@@ -62,7 +62,7 @@ class MY_Widget extends WP_Widget
 				jQuery('#customer_select select').live('change', function () {
 					var id = jQuery(this).val()
 					jQuery.ajax({
-						url: '/ajax.php?action=show_cat&id=' + id,
+						url: '/ajax.php?action=show_cat&p=3&id=' + id,
 						success: function (d) {
 							jQuery('#model_select').html(d);
 							jQuery('#engine_select').html('');
@@ -73,7 +73,7 @@ class MY_Widget extends WP_Widget
 				jQuery('#model_select select').live('change', function () {
 					var id = jQuery(this).val()
 					jQuery.ajax({
-						url: '/ajax.php?action=show_posts&id=' + id,
+						url: '/ajax.php?action=show_posts&p=4&id=' + id,
 						success: function (d) {
 							jQuery('#engine_select').html(d);
 						}
