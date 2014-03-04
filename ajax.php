@@ -6,14 +6,20 @@ require_once(dirname(__FILE__) . '/wp-load.php');
  * Date: 28.02.14
  * Time: 13:54
  */
+$pp = array(
+	2 => 'Производитель',
+	3 => 'Moдель',
+	4 => 'Moщность двигателя',
+);
 $act = @$_GET['action'];
 $id = @$_GET['id'];
-function show_cat($id)
+$p = @$_GET['p'];
+function show_cat($id, $pp, $p)
 {
 	$cats = get_categories(array('parent' => $id, 'hide_empty' => 0));
 	?>
 	<select class="car_select">
-		<option value="0" selected="selected" disabled="disabled">Выберите из списка</option>
+		<option value="0" selected="selected" disabled="disabled"><?php echo $pp[$p]; ?></option>
 		<?php
 		foreach ($cats as $cat) {
 			?>
@@ -24,13 +30,13 @@ function show_cat($id)
 <?php
 }
 
-function show_post($id)
+function show_post($id, $pp, $p)
 {
 
 	$posts = get_posts(array('category' => $id,));
 	?>
 	<select class="car_select">
-		<option value="0" selected="selected" disabled="disabled">Выберите из списка</option>
+		<option value="0" selected="selected" disabled="disabled"><?php echo $pp[$p]; ?></option>
 		<?php
 
 
@@ -47,10 +53,10 @@ function show_post($id)
 
 switch ($act) {
 	case'show_cat':
-		show_cat($id);
+		show_cat($id, $pp, $p);
 		break;
 	case 'show_posts':
-		show_post($id);
+		show_post($id, $pp, $p);
 		break;
 
 }

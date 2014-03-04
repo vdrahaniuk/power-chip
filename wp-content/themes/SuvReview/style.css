@@ -1620,3 +1620,7 @@ h3#reply-title {
 	font-size: 18px;
 	height: 30px;
 }
+.dataGrid{
+	float:left;
+	width:75%;
+}
