@@ -17,10 +17,6 @@ $urlEngine = 'http://www.tuningbox.su/index.php?action=show_moto';
 
 $html = new simple_html_dom();
 $data = array();
-$ids = @$_GET['cat_ids'];
-
-
-echo $ids = implode(',', $ids);
 
 $wpdb->query('TRUNCATE TABLE tn_cat_car_customer');
 $wpdb->query('TRUNCATE TABLE tn_cat_car_model');

@@ -84,7 +84,6 @@ foreach ($cats as $cat) {
 			$table->find('tr', 4)->find('td', 0)->innertext = 'от 30 мин до часа';
 	}
 
-	exit();
 	$page .= $table->outertext;
 	$imgs = $html->find('img[id=boxImg]');
 	foreach ($imgs as $i) {
