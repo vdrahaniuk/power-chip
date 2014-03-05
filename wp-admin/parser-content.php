@@ -23,7 +23,7 @@ cm.cat_id
 FROM
 tn_cat_car_type AS ct
 LEFT JOIN tn_cat_car_customer AS cc ON ct.id = cc.car_type
-LEFT JOIN tn_cat_car_model AS cm ON cm.car_customer = cc.id
+LEFT JOIN tn_cat_car_model AS cm ON cm.car_customer = cc.id AND cm.car_type = ct.id
 LEFT JOIN tn_cat_car_engine AS ce ON ce.car_model = cm.id
 WHERE
 ce.parsed=0
@@ -36,9 +36,13 @@ foreach ($cats as $cat) {
 	$type = str_replace(' ', '-', strtolower($cat->type));
 	echo $url = "http://www.tuningbox.su/tbv/{$type}/{$cat->customer}/{$cat->model}/{$cat->engine}.htm";
 
-	$strPage = file_get_contents($url);
-	$html = str_get_html($strPage);
 
+	$html = file_get_html($url);
+	if (!$html) {
+		$ok = $wpdb->update('tn_cat_car_engine', array('parsed' => 1), array('id' => $cat->engine, 'car_model' => $cat->model));
+		continue;
+
+	}
 	$priceTable = $html->find('table.dataGrid2');
 	$priceTable = $priceTable[0];
 	$priceArr = array();
@@ -126,5 +130,4 @@ foreach ($cats as $cat) {
 	$i++;
 }
 echo $i;
-
 
