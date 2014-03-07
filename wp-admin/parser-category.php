@@ -43,9 +43,9 @@ foreach ($carTypes as $carType) {
 		$cat_id_brand = wp_create_category($brand->value, $carType->cat_id);
 
 		$wpdb->insert('tn_cat_car_customer', array(
-			'id' => $brand->value,
-			'name' => $brand->innertext,
-			'car_type' => $carType->id,
+			'id' => urldecode($brand->value),
+			'name' => urldecode($brand->innertext),
+			'car_type' => urldecode($carType->id),
 			'cat_id' => $cat_id_brand,
 		));
 
@@ -67,12 +67,12 @@ foreach ($carTypes as $carType) {
 			if ($model->value === "0") {
 				continue;
 			}
-			$cat_id_model = wp_create_category($model->value, $cat_id_brand);
+			$cat_id_model = wp_create_category(urldecode($model->value), $cat_id_brand);
 			//var_dump($model->value);
 			$data1 = array(
-				'id' => $model->value,
-				'name' => $model->innertext,
-				'car_customer' => $brand->value,
+				'id' => urldecode($model->value),
+				'name' => urldecode($model->innertext),
+				'car_customer' => urldecode($brand->value),
 				'cat_id' => $cat_id_model,
 				'car_type' => $carType->id,
 			);
@@ -102,7 +102,7 @@ foreach ($carTypes as $carType) {
 				$data2 = array(
 					'id' => $engine->value,
 					'name' => $engine->innertext,
-					'car_model' => $model->value,
+					'car_model' => urldecode($model->value),
 				);
 
 				$wpdb->insert('tn_cat_car_engine', $data2);
@@ -117,6 +117,8 @@ foreach ($carTypes as $carType) {
 	}
 
 }
+echo $i;
+exit();
 Header('Location:/wp-admin/parser.php?msg=Успешно');
 
 

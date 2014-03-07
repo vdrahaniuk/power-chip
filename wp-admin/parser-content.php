@@ -22,15 +22,18 @@ cm.car_customer,
 cm.cat_id
 FROM
 tn_cat_car_type AS ct
-LEFT JOIN tn_cat_car_customer AS cc ON ct.id = cc.car_type
-LEFT JOIN tn_cat_car_model AS cm ON cm.car_customer = cc.id AND cm.car_type = ct.id
-LEFT JOIN tn_cat_car_engine AS ce ON ce.car_model = cm.id
+inner JOIN tn_cat_car_customer AS cc ON ct.id = cc.car_type
+inner JOIN tn_cat_car_model AS cm ON cm.car_customer = cc.id
+inner  JOIN tn_cat_car_engine AS ce ON ce.car_model = cm.id AND cm.car_type = ct.id
 WHERE
 ce.parsed=0
 limit 15");
 $i = 0;
-
-
+$prices = $wpdb->get_results("select * from prices");
+$priceArr = array();
+foreach ($prices as $v) {
+	$priceArr[$v->key] = $v->value;
+}
 foreach ($cats as $cat) {
 	$page = "<div>";
 	$type = str_replace(' ', '-', strtolower($cat->type));
@@ -43,35 +46,13 @@ foreach ($cats as $cat) {
 		continue;
 
 	}
-	$priceTable = $html->find('table.dataGrid2');
-	$priceTable = $priceTable[0];
-	$priceArr = array();
-	$pKeys = $priceTable->find('tr', 1);
-	$pVals = $priceTable->find('tr', 2)->find('td');
-	foreach ($pKeys->find('td') as $k => $v) {
-		$key = mb_strtolower((string)$v->plaintext);
-		switch ($key) {
-			case'а':
-				$key = 'a';
-				break;
-			case'в':
-				$key = 'b';
-				break;
-			case'с':
-				$key = 'c';
-				break;
-
-		}
-		$priceArr[$key] = $pVals[$k]->innertext;
-
-	}
-	//var_dump($priceArr);
 
 	$table = $html->find('table.dataGrid');
 	$table = $table[0];
 	if (!empty($priceArr)) {
 		$key = mb_strtolower((string)$table->find('tr', 5)->find('td', 0)->innertext);
-		$table->find('tr', 5)->find('td', 0)->innertext = $priceArr[$key];
+		if (isset($priceArr[$key]) && !empty($priceArr[$key]))
+			$table->find('tr', 5)->find('td', 0)->innertext = $priceArr[$key];
 	}
 
 	switch ($table->find('tr', 4)->find('td', 0)->innertext) {
