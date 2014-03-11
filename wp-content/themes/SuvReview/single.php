@@ -1,24 +1,38 @@
 <?php get_template_part('content', 'before'); ?>
+<?php
+$isTuning = false;
+$catId = get_post()->__get('post_category');
+if (is_array($catId) && count($catId)) {
+	foreach ($catId as $val) {
+		$catId = $val;
+		break;
+	}
+}
 
-    <div class="content">
-        <?php if (have_posts()) while (have_posts()) : the_post(); ?> 
-            <div class="post-wrap post-wrap-single">
-                
-                <div <?php post_class('post clearfix'); ?> id="post-<?php the_ID(); ?>">
-                
-	
-                    <h1 class="title"><?php the_title(); ?></h1>
-        	
-<div class="breadcrumbs">
-    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-</div>	            
-                        
-                    <div class="postmeta-primary">
-            
-                        <!--<span class="meta_date"> <?php the_time($theme->get_option('dateformat')); ?></span>
+$cat = get_category_parents($catId, false, '/', true);
+
+$catArr = explode('/', $cat);
+$isTuning = ($catArr[0] == 'chip-tyuning');
+?>
+	<div class="content">
+		<?php if (have_posts()) while (have_posts()) : the_post(); ?>
+			<div class="post-wrap post-wrap-single">
+
+				<div <?php post_class('post clearfix'); ?> id="post-<?php the_ID(); ?>">
+
+
+					<h1 class="title"><?php echo $isTuning ? 'Чип тюнинг ' : '';
+						the_title(); ?></h1>
+
+					<div class="breadcrumbs">
+						<?php if (function_exists('bcn_display')) {
+							bcn_display();
+						}?>
+					</div>
+
+					<div class="postmeta-primary">
+
+						<!--<span class="meta_date"> <?php the_time($theme->get_option('dateformat')); ?></span>
                        &nbsp; <span class="meta_author"><?php the_author(); ?></span>
             
                             <?php if(comments_open( get_the_ID() ))  {
@@ -28,51 +42,52 @@
                             if(is_user_logged_in())  {
                                 ?> &nbsp; <span class="meta_edit"><?php edit_post_link(); ?></span><?php
                             } ?> -->
-                    </div>
-                    
-                    <div class="entry clearfix">
-                        
-                        <?php
-                            if(has_post_thumbnail())  {
-                                the_post_thumbnail(
-                                    array(300, 225),
-                                    array("class" => "alignleft featured_image")
-                                );
-                            }
-                        ?>
-                        
-                        <?php
-                            the_content('');
-                            wp_link_pages( array( 'before' => '<p><strong>' . __( 'Pages:', 'themater' ) . '</strong>', 'after' => '</p>' ) );
-                        ?>
-            
-                    </div>
-            
-                  <!--  <div class="postmeta-secondary">
+					</div>
+
+					<div class="entry clearfix">
+
+						<?php
+						if (has_post_thumbnail()) {
+							the_post_thumbnail(
+								array(300, 225),
+								array("class" => "alignleft featured_image")
+							);
+						}
+						?>
+
+						<?php
+						the_content('');
+						wp_link_pages(array('before' => '<p><strong>' . __('Pages:', 'themater') . '</strong>', 'after' => '</p>'));
+						?>
+
+					</div>
+
+					<!--  <div class="postmeta-secondary">
                        <span class="meta_categories"><?php _e( 'Posted in:', 'themater' ); ?>  <?php the_category(', '); ?></span>
                        <?php if(get_the_tags()) {
                                 ?> &nbsp; <span class="meta_tags"><?php the_tags(__( 'Tags:', 'themater') . ' ', ', ', ''); ?></span><?php
                             }
                         ?> 
                     </div> -->
-                
-	<!-- iboobel for postfooter -->
-            <?php if (function_exists('wp_post_footer')) wp_post_footer(); ?>
-	<!-- iboobel for postfooter -->
-	
-                </div><!-- Post ID <?php the_ID(); ?> -->
-                
-            </div><!-- .post-wrap -->
-            
-            <?php 
-                if(comments_open( get_the_ID() ))  {
-                    comments_template('', true); 
-                }
-            ?>
 
-	
+					<!-- iboobel for postfooter -->
+					<?php if (function_exists('wp_post_footer')) wp_post_footer(); ?>
+					<!-- iboobel for postfooter -->
 
-        <?php endwhile; ?>
-    </div><!-- .content -->
+				</div>
+				<!-- Post ID <?php the_ID(); ?> -->
+
+			</div><!-- .post-wrap -->
+
+			<?php
+			if (comments_open(get_the_ID())) {
+				comments_template('', true);
+			}
+			?>
+
+
+
+		<?php endwhile; ?>
+	</div><!-- .content -->
 
 <?php get_template_part('content', 'after'); ?>
